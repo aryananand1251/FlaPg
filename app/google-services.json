@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "531669762881",
+    "firebase_url": "https://data-store-fetch-default-rtdb.firebaseio.com",
+    "project_id": "data-store-fetch",
+    "storage_bucket": "data-store-fetch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531669762881:android:942cbabb766a7e068757c0",
+        "android_client_info": {
+          "package_name": "com.example.data_store_fetch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTSb8dpcIVaCSKwgITP7o-Y3AwRZo24Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531669762881:android:7d95b93190dd45d38757c0",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTSb8dpcIVaCSKwgITP7o-Y3AwRZo24Lo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/navhome"
+        android:title="Home"
+        android:icon="@drawable/home">
+    </item>
+
+    <item android:id="@+id/navbook"
+        android:title="My Bookings"
+        android:icon="@drawable/bookings">
+    </item>
+
+    <item android:id="@+id/navwallet"
+        android:title="My wallet"
+        android:icon="@drawable/wallet">
+    </item>
+
+    <item android:id="@+id/navaccount"
+        android:title="Account"
+        android:icon="@drawable/account">
+    </item>
+
+</menu>

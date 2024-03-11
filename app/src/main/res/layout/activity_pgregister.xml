@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pgregister">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register Your Property"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Type"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="10dp"/>
+
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Property Name"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Enter your Property name">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Number"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/pregno"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Property Registration Number">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Owner Name"
+            android:layout_marginTop="10dp">
+
+
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/pownname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Property Owner name">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Detailed Address"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/State"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="State"
+                android:textSize="8sp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/City"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="City"
+                android:layout_gravity="center_horizontal"
+                android:textSize="8sp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/District"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="District"
+                android:layout_gravity="right"
+                android:textSize="8sp">
+
+            </EditText>
+            <EditText
+                android:id="@+id/Pincode"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                android:hint="Pin code"
+                android:layout_marginTop="50dp"
+                android:textSize="8sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/Landmark"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:hint="Land Mark"
+                android:inputType="text"
+                android:textSize="8sp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/Locality"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Locality"
+                android:layout_marginTop="49dp"
+                android:layout_gravity="end"
+                android:textSize="8sp">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:layout_marginTop="10dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="2dp">
+
+            <EditText
+                android:id="@+id/own_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Enter your phone number">
+
+            </EditText>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="end">
+
+        </Button>
+
+        <Button
+            android:id="@+id/REG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center">
+        </Button>
+
+
+    </LinearLayout>
+
+</ScrollView>

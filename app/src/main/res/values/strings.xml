@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FlaPG</string>
+    <string name="title_activity_home">home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="list_property">List Your Property</string>
+    <string name="l_p">              List your property with us
+               which is visited by over
+                 1 lakh users everyday    </string>
+    <string name="txtv3">Forgot Password</string>
+    <string name="txtv2">Enter Your Detail</string>
+    <string name="txtedt1">Email id</string>
+    <string name="txtedt2">Password</string>
+    <string name="btntxt2">Signup</string>
+    <string name="txtedt3">Confirm Password</string>
+    <string name="btntxt">Login</string>
+    <string name="txtv">Sign In</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_info_title">title</string>
+    <string name="default_info_snippet">snippet</string>
+    <string name="pick_place">setTitle</string>
+    <string name="maps_api_key">AIzaSyBwTle9aKrOOp42SO_67hy5TDfO4vOBYCo</string>
+    <string-array name="Property_Type">
+        <item>Boys PG</item>
+        <item>Girls Pg</item>
+        <item>Flat</item>
+        <item>Hostel</item>
+    </string-array>
+</resources>
