@@ -6,6 +6,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".f_home">
+    
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +29,8 @@
            app:cardCornerRadius="15dp"
            android:layout_marginTop="5dp"
            android:layout_marginBottom="5dp"
-           android:elevation="15dp">
+           android:elevation="15dp"
+           tools:ignore="MissingClass">
 
 
         <androidx.appcompat.widget.SearchView
@@ -76,8 +79,8 @@
  -->
         <ImageView
             android:id="@+id/notification"
-            android:layout_width="50dp"
-            android:layout_height="41dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:layout_marginRight="5dp"
             android:src="@drawable/baseline_notifications_24">
 
@@ -92,7 +95,9 @@
         android:layout_marginTop="15dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:backgroundTint="#3BD58A">
+        android:backgroundTint="#3BD58A"
+        android:elevation="8dp"
+        tools:ignore="MissingClass">
 
 
 
@@ -170,7 +175,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="#3BD58A"
+            android:backgroundTint="#ffff"
+            android:elevation="8dp"
             app:cardCornerRadius="10dp">
 
             <ImageView
@@ -189,8 +195,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="#3BD58A"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="10dp"
+            android:backgroundTint="#ffff"
+            android:elevation="8dp"
+            tools:ignore="MissingClass">
 
             <ImageView
                 android:id="@+id/near_college"
@@ -206,7 +214,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:backgroundTint="#3BD58A"
+            android:backgroundTint="#ffff"
+            android:elevation="8dp"
             app:cardCornerRadius="10dp">
 
             <ImageView
@@ -225,7 +234,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:backgroundTint="#3BD58A"
+            android:backgroundTint="#ffff"
+            android:elevation="8dp"
             app:cardCornerRadius="10dp">
 
             <ImageView
@@ -309,8 +319,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            app:cardCornerRadius="15dp"
-            >
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:elevation="8dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -319,16 +332,20 @@
 
                 <ImageView
 
+                    android:layout_marginTop="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:src="@drawable/property"
+                    android:layout_marginBottom="3dp"
                     android:layout_marginLeft="30dp">
 
                 </ImageView>
 
                 <ImageView
+                    android:layout_marginTop="5dp"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
+                    android:layout_marginBottom="3dp"
                     android:src="@drawable/privateproperty"
                     android:layout_marginLeft="30dp">
 
