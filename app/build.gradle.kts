@@ -55,6 +55,8 @@ dependencies {
     implementation ("com.google.android.gms:play-services-location:17.0.0")
     implementation ("com.google.code.gson:gson:2.3")
     implementation ("androidx.work:work-runtime:2.7.1")
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    implementation ("com.intuit.ssp:ssp-android:1.1.0")
 
 
 
