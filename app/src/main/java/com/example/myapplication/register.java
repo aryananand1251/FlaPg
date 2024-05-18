@@ -54,6 +54,8 @@ public class register extends AppCompatActivity {
         final ProgressBar progressBar=findViewById(R.id.progressbar);
 
         final String Name=Fullname.getText().toString();
+        final String MoileNumber=getIntent().getStringExtra("otpMobile");
+        Mobile.setText(MoileNumber);
 
 
 
@@ -113,7 +115,7 @@ public class register extends AppCompatActivity {
                 if(TextUtils.isEmpty(Pass)|| TextUtils.isEmpty(Cnfpass)){
                     Toast.makeText(register.this, "Enter password", Toast.LENGTH_SHORT).show();
                     return;
-                }if(password.getText().equals(cnfpassword)) {
+                }if(password.getText().toString().equals(cnfpassword.getText().toString())) {
 
                     mAuth.createUserWithEmailAndPassword(Email, Pass)
                             .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -123,6 +125,7 @@ public class register extends AppCompatActivity {
                                         Toast.makeText(register.this, "Account Created", Toast.LENGTH_SHORT).show();
                                         Intent intent = new Intent(register.this, home.class);
                                         intent.putExtra("Fullname", Name);
+                                        intent.putExtra("Mobile",MoileNumber);
                                         startActivity(intent);
                                         finish();
 
