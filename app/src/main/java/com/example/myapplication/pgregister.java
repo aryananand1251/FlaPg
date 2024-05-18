@@ -17,9 +17,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.nio.charset.StandardCharsets;
+
 public class pgregister extends AppCompatActivity {
 
-    EditText pname,pregno,pownname,State,City,District,Pincode,Landmark,Locality,own_phone;
+    EditText pname,pregno,nearestCllg,pownname,State,City,District,Pincode,Landmark,Locality,own_phone;
     Button save,REG;
 
     DatabaseReference mDatabase;
@@ -33,6 +35,7 @@ public class pgregister extends AppCompatActivity {
         Spinner spinner=findViewById(R.id.spinner);
         pname=findViewById(R.id.name);
         pregno=findViewById(R.id.pregno);
+        nearestCllg=findViewById(R.id.nearestCllg);
         pownname=findViewById(R.id.pownname);
         State=findViewById(R.id.State);
         City=findViewById(R.id.City);
@@ -53,6 +56,7 @@ public class pgregister extends AppCompatActivity {
             public void onClick(View v) {
                 String prname=pname.getText().toString();
                 String prno=pregno.getText().toString();
+                String nearclg=nearestCllg.getText().toString();
                 String prowname=pownname.getText().toString();
                 String state=State.getText().toString();
                 String city=City.getText().toString();
@@ -62,9 +66,9 @@ public class pgregister extends AppCompatActivity {
                 String locality=Locality.getText().toString();
                 String Own_phone=own_phone.getText().toString();
 
-                if(!prname.isEmpty() && !prno.isEmpty() && !prowname.isEmpty() && !state.isEmpty() && !city.isEmpty() && !district.isEmpty()  && !pincode.isEmpty() && !landmark.isEmpty() && !locality.isEmpty() && !Own_phone.isEmpty()){
+                if(!prname.isEmpty() && !nearclg.isEmpty() && !prno.isEmpty() && !prowname.isEmpty() && !state.isEmpty() && !city.isEmpty() && !district.isEmpty()  && !pincode.isEmpty() && !landmark.isEmpty() && !locality.isEmpty() && !Own_phone.isEmpty()){
 
-                    User user=new User(prname,prno,prowname,state,city,district,pincode,landmark,locality,Own_phone);
+                    User user=new User(prname,prno,nearclg,prowname,state,city,district,pincode,landmark,locality,Own_phone);
                     mDatabase= FirebaseDatabase.getInstance().getReference("User");
                     mDatabase.child(prname).setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
@@ -72,6 +76,7 @@ public class pgregister extends AppCompatActivity {
 
                             pname.setText("");
                             pregno.setText("");
+                            nearestCllg.setText("");
                             pownname.setText("");
                             State.setText("");
                             City.setText("");

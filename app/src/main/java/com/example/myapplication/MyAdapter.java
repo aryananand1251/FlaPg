@@ -34,7 +34,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.name.setText(list.get(position).getPname());
         holder.city.setText(list.get(position).getCity());
-
+       holder.nearestCllg.setText((CharSequence) list.get(position).getNearestcllg());
     }
 
 
@@ -45,14 +45,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         return list.size();
     }
 
+    public void searchDataList(ArrayList<User> searchList){
+        list=searchList;
+        notifyDataSetChanged();
+    }
+
     public class ViewHolder extends RecyclerView.ViewHolder{
 
-        TextView name,city;
+        TextView name,city,nearestCllg;
 
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             name=itemView.findViewById(R.id.name);
             city=itemView.findViewById(R.id.city);
+            nearestCllg=itemView.findViewById(R.id.nearestCllg);
 
         }
     }
